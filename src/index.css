@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.container {
+    border-width: 3px;
+    padding: 10px;
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    padding: 16px 8px;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+.keyword-list a {
+    margin-left: 0px;
+}
+
+.keywords {
+    margin-right: 8px;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+hr {
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 8px;
+    margin-right: 9px;
+}
+
+.keyword-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-list {
+    border-width: 3px;
+    border-style: solid;
+    width: 30%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 16px 8px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: none;
+}
+
+.hovering:hover .dropdown-list,
+.menu:hover .subitem,
+.subitem:hover .submenu {
+    display: block;
+}
+
+@media screen and (min-width : 768px) {
+    li {
+        margin-right: 25px;
+        font-size: 24px;
+    }
+
+    .container {
+        margin-top: 60px;
+    }
+
+    .dropdown-list {
+        margin-left: 40px;
+        width: 28%;
+    }
+
+    .keywords {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    .subitem,
+    .submenu {
+        margin-left: 168%;
+    }
+}
+
+.edit:hover {
+    background-color: lightblue;
+}
+
+.subitem,
+.submenu {
+    border-width: 3px;
+    border-style: solid;
+    width: 80%;
+    margin-left: 83%;
+    z-index: 5;
+    background-color: #f9f9f9;
+    box-shadow: 0px 16px 8px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: none;
+    padding: 16px 8px;
+}
+
+.subitem li a {
+    padding: 16px 8px 8px 8px;
+
+}
